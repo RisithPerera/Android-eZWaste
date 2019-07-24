@@ -2,10 +2,12 @@ package com.example.ezwaste;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
     @Override
@@ -24,9 +26,19 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
-            case R.
+            case R.id.option1:
+                Toast.makeText(this,"Settings", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.option2:
+                openSettingsActivity();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
+    private void openSettingsActivity() {
+         Intent intent = new Intent(this, SettingsActivity.class);
+         startActivity(intent);
+    }
 }
