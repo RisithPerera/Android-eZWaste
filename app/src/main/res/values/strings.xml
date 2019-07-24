@@ -1,3 +1,7 @@
 <resources>
+
     <string name="app_name">eZWaste</string>
+    <string name="todo">TODO</string>
+    <string name="show_path">Cancel</string>
+    <string name="empty_busket">Okay</string>
 </resources>
