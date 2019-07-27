@@ -5,4 +5,13 @@
     <string name="show_path">Cancel</string>
     <string name="empty_busket">Okay</string>
     <string name="title_activity_maps">Map</string>
+
+    <!-- User Interface String -->
+    <string name="btn_login">LogIn</string>
+    <string name="text_username">Username</string>
+    <string name="text_password">Password</string>
+    <string name="switch_refresh">Auto Refresh</string>
+    <string name="switch_notification">Notifications</string>
+    <string name="switch_sound">Sounds</string>
+
 </resources>

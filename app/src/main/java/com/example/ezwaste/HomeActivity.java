@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 public class HomeActivity extends AppCompatActivity implements OnMapReadyCallback {
@@ -40,10 +41,16 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case R.id.option1:
-                openLogInActivity();
+                Toast.makeText(this,"Refreshed",Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.option2:
                 openSettingsActivity();
+                return true;
+            case R.id.option3:
+                Toast.makeText(this,"About Selected",Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.option4:
+                openLogInActivity();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

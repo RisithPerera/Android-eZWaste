@@ -1,0 +1,12 @@
+<resources>
+    <!--dimes for design 3-->
+    <dimen name="textBox_width">250dp</dimen>
+    <dimen name="textBox_height">50dp</dimen>
+
+    <dimen name="button_width">100dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+
+    <dimen name="text_size">20dp</dimen>
+
+    <dimen name="settings_height">75dp</dimen>
+</resources>

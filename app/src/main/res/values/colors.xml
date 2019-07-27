@@ -7,4 +7,8 @@
     <color name="colorDark">#313131</color>
     <color name="colorGreen">#15a43b</color>
     <color name="colorWhite">#f8f8f8</color>
+
+    <!--colors for modern ui-->
+    <color name="colorBlue">#00a5ff</color>
+
 </resources>

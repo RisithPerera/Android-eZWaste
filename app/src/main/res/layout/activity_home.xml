@@ -1,55 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_height="300dp"
+        android:background="@color/colorGreen"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="800dp"
-            android:orientation="vertical"
-            android:background="@color/colorGreen">
-
-            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:map="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/map"
-                android:name="com.google.android.gms.maps.SupportMapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".HomeActivity" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.6"
-            android:background="@color/colorWhite"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="170dp"
-                android:layout_height="70dp"
-                android:background="@color/colorDark"
-                android:text="@string/show_path" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="170dp"
-                android:layout_height="70dp"
-                android:background="@color/colorGreen"
-                android:text="@string/empty_busket" />
-        </LinearLayout>
+            android:layout_height="300dp"
+            tools:context=".HomeActivity" />
 
     </LinearLayout>
-</ScrollView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:background="@color/colorDark"
+                    android:text="@string/show_path" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:background="@color/colorGreen"
+                    android:text="@string/empty_busket" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:background="@color/colorDark"
+                    android:text="@string/show_path" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:background="@color/colorGreen"
+                    android:text="@string/empty_busket" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:background="@color/colorDark"
+                    android:text="@string/show_path" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:background="@color/colorGreen"
+                    android:text="@string/empty_busket" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:background="@color/colorDark"
+                    android:text="@string/show_path" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:background="@color/colorGreen"
+                    android:text="@string/empty_busket" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
