@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "430739853557",
+    "firebase_url": "https://ezwaste-map-project.firebaseio.com",
+    "project_id": "ezwaste-map-project",
+    "storage_bucket": "ezwaste-map-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430739853557:android:1fc6ca1676c8ac09",
+        "android_client_info": {
+          "package_name": "com.example.ezwaste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430739853557-59tts350oo6m7m7p5rva1riporjl8sgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ezwaste",
+            "certificate_hash": "2fdc6cbe14b6bfce61a532d6b8c9c82e072ca527"
+          }
+        },
+        {
+          "client_id": "430739853557-o5aa5901e9tjfr74rtladk8t049dradb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFywIlF76kuiak9fJ8n2wYJqQzOROrgGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430739853557-o5aa5901e9tjfr74rtladk8t049dradb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

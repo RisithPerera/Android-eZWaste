@@ -18,9 +18,8 @@
         android:text="@string/switch_refresh"
         android:textSize="@dimen/text_size"
         android:textColor="@color/colorDark"
-        android:thumbTint="@color/colorGreen"
-        android:trackTint="@color/colorGreen"
-        android:trackTintMode="src_over"
+        android:thumbTint="@color/colorBlue"
+        android:trackTint="@color/colorBlue"
         android:checked="true"/>
 
     <Switch
@@ -32,7 +31,6 @@
         android:textColor="@color/colorDark"
         android:thumbTint="@color/colorGreen"
         android:trackTint="@color/colorGreen"
-        android:trackTintMode="src_over"
         android:checked="true"/>
 
     <Switch

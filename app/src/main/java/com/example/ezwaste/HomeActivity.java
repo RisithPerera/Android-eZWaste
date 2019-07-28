@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                 openSettingsActivity();
                 return true;
             case R.id.option3:
-                Toast.makeText(this,"About Selected",Toast.LENGTH_SHORT).show();
+                openAboutActivity();
                 return true;
             case R.id.option4:
                 openLogInActivity();
@@ -81,6 +81,11 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void openLogInActivity() {
         Intent intent = new Intent(this, LogInActivity.class);
+        startActivity(intent);
+    }
+
+    private void openAboutActivity() {
+        Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
     }
 }
