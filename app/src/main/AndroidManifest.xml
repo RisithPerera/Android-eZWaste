@@ -7,7 +7,16 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
+
+    <uses-permission android:name="com.javapapers.android.maps.path.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
 
     <application
         android:allowBackup="true"
@@ -17,10 +26,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".LogInActivity" />
-        <activity
-            android:name=".SettingsActivity"
-            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".LogInActivity"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +34,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".HomeActivity" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".HomeActivity" />
+
+        <activity
+            android:name=".HomeActivity">
+
+        </activity>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
